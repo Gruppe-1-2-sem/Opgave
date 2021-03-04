@@ -1,0 +1,98 @@
+body{
+  background-color: #F3EEE0;
+  font-family: Helvetica Neue;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button1 {
+  background-color: #D9C99A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 25px;
+  border:none;
+  cursor: pointer;
+  width: 30%;
+}
+
+.button2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 25px;
+  border:none;
+  cursor: pointer;
+  width: 30%;
+}
+
+.knapper {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.container{
+  margin: 30%;
+  margin-top: 5%;
+  border: 3px solid #ccc;
+  background-color: white;
+}
+
+.login1 {
+  padding: 16px;
+
+}
+.login2 {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* The "Forgot password" text */
+span.kodeord {
+  float: right;
+  padding-top: 16px;
+}
+
+span.gæst {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.kodeord {
+    display: block;
+    float: none;
+  }
+
+}
