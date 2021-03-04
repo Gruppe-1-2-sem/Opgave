@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiny Tools</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+
+  </head>
+  <body>
+
+    <div class="profil">
+    <img src="profil.jpg" alt="img-profil" style="with:100"/>
+  </div>
+
+    <div class="wrapper">
+      <img class="img-logo" src="logo.png" />
+      </div>
+
+
+      <div class="image1">
+          <img class="image__img" src="kosmetolog.jpg" alt="img-kosmetolog"/>
+          <div class="image__overlay">
+            <div class="image__title">Kosmetolog</div>
+            <p class="image__description">
+              Find kosmetolog </p>
+          </div>
+        </div>
+
+
+
+        <div class="image2">
+            <img class="image__img" src="frisør.jpg" alt="img-frisør"/>
+            <div class="image__overlay">
+              <div class="image__title">Frisør</div>
+              <p class="image__description">
+                Find Frisør </p>
+            </div>
+          </div>
+
+
+
+          <div class="image3">
+              <img class="image__img" src="fysioterapeut.jpg" alt="img-fysioterapeut"/>
+              <div class="image__overlay">
+                <div class="image__title">Fysioterapeut</div>
+                <p class="image__description">
+                  Find Fysioterapeut </p>
+              </div>
+            </div>
+
+
+          <script>
+
+          var i =0;
+          var images =[];
+          var time = 1000;
+
+          images[0] = 'scissor_1.jpg';
+          images[1] = 'scissor_2.jpg';
+          images[2] = 'scissor_3.jpg';
+
+          function changeImg() {
+            document.slide.src = images[i];
+
+            if (i < images.length - 1) {
+              i++;
+            } else {
+              i=0;
+            }
+
+            setTimeout("changeImg()", time );
+          }
+
+          window.onload = changeImg;
+
+
+          </script>
+
+          <div class="js">
+          <img name="slide" width="400" height="200">
+        </div>
+
+
+
+
+  </body>
+</html>
