@@ -1,0 +1,97 @@
+body {
+  background: linear-gradient(45deg, rgba(245,245,245,1) 0%, rgba(217,201,154,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+
+}
+
+.kasse {
+  margin: 50px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.fonttekst {
+  padding: 20px;
+}
+.input {
+margin-bottom: 25px;
+padding-right: 75px;
+}
+.inputA {
+margin-bottom: 10px;
+padding-right: 75px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column33 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row33:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.opr-log {
+  text-align: center;
+}
+
+.SoMeFb {
+  border: 1px solid black;
+  background-color: #1877F2;
+  text-align: center;
+  margin: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.SoMeGo {
+  border: 1px solid black;
+  background-color: red;
+  text-align: center;
+  margin: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.SoMeAp {
+  border: 1px solid black;
+  background-color: #fff;
+  text-align: center;
+  margin: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+
+}
+.SoMeOp {
+  border: 1px solid black;
+  background-color: lightgreen;
+  text-align: center;
+  margin: 40px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+.ja-nej {
+padding-left:2px;
+position:relative
+}
+.tabel {
+  border-collapse: collapse;
+}
+.fonttekst img {
+  width: 10%;
+  height: auto;
+}
+
+@media screen and (max-width: 900.01px) {
+  .column33 {
+    width: 100%;
+  }
+}
