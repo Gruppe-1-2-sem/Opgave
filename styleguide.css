@@ -1,0 +1,114 @@
+body {
+  margin: 25px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column33 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row33:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.farve1 {
+  border: 1px solid black;
+  background-color: #D9C99A;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve2 {
+  border: 1px solid black;
+  background-color: #00B9FF;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve3 {
+  border: 1px solid black;
+  background-color: #E5E5E5;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve4 {
+  border: 1px solid black;
+  background-color: #A6C5D8;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve5 {
+  border: 1px solid black;
+  background-color: #808080;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve6 {
+  border: 1px solid black;
+  background-color: #B7E4FF;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve7 {
+  border: 1px solid black;
+  background-color: #000000;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve8 {
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve9 {
+  border: 1px solid black;
+  background-color: #EDD417;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve10 {
+  border: 1px solid black;
+  background-color: #41DB34;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.farve11 {
+  border: 1px solid black;
+  background-color: #F80E0E;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 150px;
+}
+.symbolfoto img {
+  width: 90%;
+  height: auto;
+}
+.javas img {
+  width: 100%;
+  height: auto;
+}
+.body img {
+  width: 100%;
+  height: auto;
+}
+.Logo img {
+  width: 50%;
+  height: auto;
+}
+.kalender img {
+  width: 50%;
+  height: auto;
+}
