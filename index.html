@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div  id="logo">
+        <a href="/index.html">
+            <img src="/images/tinytoolsLogo.png" />
+        </a>
+    </div>
+    <header>
+        <ul>
+            <li><a href="/prebooking.html">Booking</a></li>
+            <li><a href="">Partnere</a></li>
+            <li><a href="">kontact</a></li>
+            <li><a href="">Sociale medier</a></li>
+            
+        </ul>
+    </header>
+    <div id="profil" >
+        <a href="/login.html">
+    <img src="/images/profil.jpg" />
+            </a>
+    </div>
+    <div class="slideshow-container">
+        <img name="slide" />
+    </div>
+
+
+    <script>
+        var i = 0; 			
+        var images = [];	
+        var time = 3000;	
+
+       
+        images[0] = "/images/frisoer.jpg";
+        images[1] = "/images/physi.jpg";
+        images[2] = "/images/nejle.jpg";
+        images[3] = "/images/Kosmetolog.jpg";
+
+        function changeImg() {
+            document.slide.src = images[i];
+
+            
+            if (i < images.length - 1) {
+               
+                i++;
+            } else {
+                
+                i = 0;
+            }
+
+            
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+    </script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href='/plugin/lib/main.css' rel='stylesheet' />
+    <script src='/plugin/lib/main.js'></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidec">
+            <div class="box">
+                <div class="ugedag">
+                    <div>Ma</div>
+                    <div>Ti</div>
+                    <div>On</div>
+                    <div>To</div>
+                    <div>Fr</div>
+                    <div>Lø</div>
+                    <div>Sø</div>
+                </div>
+                <div class="dag">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div class="idag">15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div class="nextm">1</div>
+                    <div class="nextm">2</div>
+                    <div class="nextm">3</div>
+                    <div class="nextm">4</div>
+                    <div class="nextm">5</div>
+                    <div class="nextm">6</div>
+                    <div class="nextm">7</div>
+                    <div class="nextm">8</div>
+                    <div class="nextm">9</div>
+                    <div class="nextm">10</div>
+                    <div class="nextm">11</div>
+                    <div class="nextm">12</div>
+                    <div class="nextm">13</div>
+                    <div class="nextm">14</div>
+                </div>
+                <div class="month"><p>← Februar →</p></div>
+            </div>
+            <div class="box2">
+                <input type="text" placeholder="Ansat tid" />
+                <input type="text" placeholder="Navn på kunde" />
+                <button>click and drag</button>
+            </div>
+        </div>
+
+
+        <div class="mainc">
+
+            <div id='calendar'></div>
+
+
+        </div>
+    </div>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialDate: '2021-04-01',
+                initialView: 'timeGridWeek',
+                nowIndicator: true,
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                selectable: true,
+                selectMirror: true,
+                dayMaxEvents: true, // allow "more" link when too many events
+                events: [
+
+                ]
+            });
+
+            calendar.render();
+        });
+
+    </script>
+</body>
+</html>

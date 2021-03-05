@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiny Tools</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet1.css">
+
+  </head>
+  <body>
+
+      <div class="profil">
+          <a href="login.html">
+              <img src="/images/profil.jpg" href="login.html" alt="img-profil" style="width:100%" />
+          </a>
+      </div>
+
+    <div class="wrapper">
+        <a href="index.html">
+            <img class="img-logo" src="/images/logo.png" />
+        </a>
+
+
+            <div class="image1">
+                <img class="image__img" src="/images/kosmetolog.jpg" alt="img-kosmetolog" />
+                <div class="image__overlay">
+                    <div class="image__title">Kosmetolog</div>
+                    <p class="image__description">
+                        Find kosmetolog
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="image2">
+                
+                    <img class="image__img" src="/images/frisør.jpg" href="booking.html" alt="img-frisør" />
+                
+                    <div class="image__overlay">
+                        <a href="booking.html" style="text-decoration: none; color:#ffffff;">
+                            <div class="image__title">Frisør</div>
+                        </a>
+                            <p class="image__description">
+                                Find Frisør
+                            </p>
+                    </div>
+</div>
+
+
+
+            <div class="image3">
+                <img class="image__img" src="/images/fysioterapeut.jpg" alt="img-fysioterapeut" />
+                <div class="image__overlay">
+                    <div class="image__title">Fysioterapeut</div>
+                    <p class="image__description">
+                        Find Fysioterapeut
+                    </p>
+                </div>
+            </div>
+    </div>
+
+          <script>
+
+          var i =0;
+          var images =[];
+          var time = 1000;
+
+              images[0] = '/images/scissor_1.jpg';
+              images[1] = '/images/scissor_2.jpg';
+              images[2] = '/images/scissor_3.jpg';
+
+          function changeImg() {
+            document.slide.src = images[i];
+
+            if (i < images.length - 1) {
+              i++;
+            } else {
+              i=0;
+            }
+
+            setTimeout("changeImg()", time );
+          }
+
+          window.onload = changeImg;
+
+
+          </script>
+
+          <div class="js">
+          <img name="slide" width="400" height="200">
+        </div>
+
+
+
+
+  </body>
+</html>
